@@ -6,7 +6,7 @@
 
 2. In `client-school`: `yarn install`
 
-3. In `client-school`: `npx start`
+3. In `client-school`: `npm run start` or `npm run build`
 
 ## TODO readme:
 
