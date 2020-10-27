@@ -1,4 +1,4 @@
-# web-school
+# ITSchool
 
 ## Installation
 
