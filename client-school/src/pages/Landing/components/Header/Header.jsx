@@ -1,10 +1,10 @@
-import React from "react";
-import headerBackground from "../assets/Header-background.svg";
-import "./Header.css";
+import React from "react"
+import headerBackground from "../../../../assets/headerBackground.png"
+import "./Header.css"
 
 export default function Header() {
   return (
-    <div>
+    <div className="root-header">
       <header className="header">
         <div className="header_text">
           <p>
@@ -27,7 +27,7 @@ export default function Header() {
           </p>
           <button className="header_info_btn">Войти в систему</button>
         </div>
-        <img src={headerBackground} alt="" className="header_img" />
+        <img src={headerBackground} alt=""/>
       </div>
     </div>
   );

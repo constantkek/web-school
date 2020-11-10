@@ -1,5 +1,8 @@
+.root-header {
+    margin: 36px 106px;
+}
+
 .header {
-    margin: 36px 0px;
     display: grid;
     grid-template-columns: 400px 900px;
     background-color: #FFFFFF;
@@ -50,10 +53,10 @@
 .header_navbar {
     width: 439px;
     height: 21px;
+    display: flex;
 }
 
 .header_navbar a {
-    float: left;
     text-align: center;
     font-family: Roboto;
     font-style: normal;
@@ -64,12 +67,6 @@
     color: #000000;
     margin-right: 23px;
     margin-top: 33px;
-}
-
-.header_img {
-    width: 499.74px;
-    height: 700.55px;
-    transform: rotate(-10.15deg);
 }
 
 .header_info {
