@@ -10,12 +10,14 @@ import { OurTeachers } from "./components/OurTeachers";
 
 export default function Landing() {
   return (
-    <div className="landing">
-      <Header />
-      <TermsOfCourses />
-      <OurStudents />
-      <OurTeachers />
-      <Footer />
+    <div className="App">
+      <div className="landing">
+        <Header />
+        <TermsOfCourses />
+        <OurStudents />
+        <OurTeachers />
+        <Footer />
+      </div>
     </div>
   );
 }

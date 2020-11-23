@@ -1,13 +1,6 @@
-import React from 'react'
-import './App.css';
-import { Landing } from './pages/Landing'
+import React from "react";
+import Router from "./Router";
 
-function App() {
-  return (
-    <div className="App">
-      <Landing/>
-    </div>
-  );
-}
+const App = () => <Router />;
 
 export default App;
