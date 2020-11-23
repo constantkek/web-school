@@ -1,7 +1,6 @@
-import Vector from '../../../../assets/Vector.svg'
+import Vector from "../../../../assets/Vector.svg";
 
-import "./TermsOfCourses.css"
-
+import "./TermsOfCourses.css";
 
 export default function Courses() {
   return (
@@ -14,32 +13,41 @@ export default function Courses() {
       </section>
       <section className="section-cards">
         <div className="block-main-card">
-          <h2 className="h2-card-title"><a href="#">Трайхардер</a></h2>
+          <h2 className="h2-card-title">
+            <a href="vk.com">Трайхардер</a>
+          </h2>
           <p className="p-card-description">
-            Для тех, кто устал ждать и хочет
-            изменить свю судьбу в лучшую сторону,
-            благодаря IT сфере.<br/><br/>Условия:</p>
-            <p className="p-terms">Все курсы</p>
-            <p className="p-terms">
-              Задание, добавление в общий чат
-              в Telegram и общение с препода-
-              вателями через чат, а так же
-              через скайп
-            </p>
-            <p className="p-terms">
-              9 999 рублей / месяц
-            </p>
-            <div className="button-wrapper">
-              <button className="button-vector"><img src={Vector} alt=""/></button>
-            </div>
+            Для тех, кто устал ждать и хочет изменить свю судьбу в лучшую
+            сторону, благодаря IT сфере.
+            <br />
+            <br />
+            Условия:
+          </p>
+          <p className="p-terms">Все курсы</p>
+          <p className="p-terms">
+            Задание, добавление в общий чат в Telegram и общение с препода-
+            вателями через чат, а так же через скайп
+          </p>
+          <p className="p-terms">9 999 рублей / месяц</p>
+          <div className="button-wrapper">
+            <button className="button-vector">
+              <img src={Vector} alt="" />
+            </button>
+          </div>
         </div>
       </section>
       <section className="section-our-students">
         <div className="background-relative">
           <div className="background-absolute-2"></div>
         </div>
-        <div className="div-our-students"><h2 className="h2-our-students">Что говорят о нас<br/>наши ученики</h2></div>
+        <div className="div-our-students">
+          <h2 className="h2-our-students">
+            Что говорят о нас
+            <br />
+            наши ученики
+          </h2>
+        </div>
       </section>
     </div>
-  )
+  );
 }
