@@ -16,17 +16,6 @@
   background: #F1F3F6;
 }
 
-.background-absolute-2 {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 705px;
-  height: 209px;
-  background: #F1F3F6;
-  border-radius: 0px 12px 0px 0px;
-  margin-top: 175px;
-}
-
 .section-terms {
   position: relative;
   padding-top: 71px;
@@ -104,22 +93,4 @@
 
 .button-vector:hover {
   background-color: #ccc;
-}
-
-.section-our-students {
-  display: flex;
-}
-
-.div-our-students {
-  position: relative;
-  padding-top: 231px;
-  padding-left: 135px;
-}
-
-.h2-our-students {
-  margin-top: 0;
-  font-size: 42px;
-  font-family: Roboto, sans-serif;
-  text-align: left;
-  color: black;
 }

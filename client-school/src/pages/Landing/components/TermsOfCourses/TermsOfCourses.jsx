@@ -36,18 +36,6 @@ export default function Courses() {
           </div>
         </div>
       </section>
-      <section className="section-our-students">
-        <div className="background-relative">
-          <div className="background-absolute-2"></div>
-        </div>
-        <div className="div-our-students">
-          <h2 className="h2-our-students">
-            Что говорят о нас
-            <br />
-            наши ученики
-          </h2>
-        </div>
-      </section>
     </div>
   );
 }
