@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import headerBackground from "../../../../assets/headerBackground.png";
 import "./Header.css";
 
@@ -23,7 +24,9 @@ export default function Header() {
           <p className="header_info_text">
             Начните обучение <br /> будущей профессии <br /> уже сейчас
           </p>
-          <button className="header_info_btn"> Войти в систему </button>
+          <Link to="/autorization">
+            <button className="header_info_btn">Войти в систему</button>
+          </Link>
         </div>
         <img src={headerBackground} alt="" />
       </div>

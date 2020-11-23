@@ -7,10 +7,12 @@ import "./Landing.css";
 
 export default function Landing() {
   return (
-    <div className="landing">
-      <Header />
-      <TermsOfCourses />
-      <Footer />
+    <div className="App">
+      <div className="landing">
+        <Header />
+        <TermsOfCourses />
+        <Footer />
+      </div>
     </div>
   );
 }
