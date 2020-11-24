@@ -20,6 +20,17 @@ export default function Authorization() {
             placeholder="Password"
           />
           <button className="authorization_form_btn">Sign in</button>
+          <div className="authorization_form_register">
+            <div>
+              <p>
+                <span>Если у вас нет аккаунта</span>
+              </p>
+
+              <p>
+                <a href="#">Свяжитесь с нами</a>
+              </p>
+            </div>
+          </div>
         </form>
       </div>
     </div>

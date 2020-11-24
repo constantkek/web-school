@@ -73,3 +73,17 @@
 .authorization_form button:hover {
     box-shadow: 5px -5px 20px 0px #68A7D1, -5px 10px 21px -2px #A49FA5;
 }
+
+.authorization_form_register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px
+}
+
+.authorization_form_register a {
+    color: #57B846;
+    margin-top: 20px;
+    margin-left: 18px;
+    text-decoration: none;
+}
