@@ -5,12 +5,22 @@ export default function Authorization() {
   return (
     <div className="authorization">
       <div className="authorization_window">
-        <h3>Войти в систему</h3>
-        <label htmlFor="">Логин</label>
-        <input type="text" />
-        <label htmlFor="">Пароль</label>
-        <input type="text" />
-        <button>Sign in</button>
+        <div className="authorization_window_header">
+          <h3>Sign in</h3>
+        </div>
+        <form className="authorization_form" action="">
+          <input
+            className="authorization_form_login"
+            type="text"
+            placeholder="Username"
+          />
+          <input
+            className="authorization_form_password"
+            type="password"
+            placeholder="Password"
+          />
+          <button className="authorization_form_btn">Sign in</button>
+        </form>
       </div>
     </div>
   );
