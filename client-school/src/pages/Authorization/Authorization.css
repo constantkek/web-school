@@ -9,7 +9,7 @@
     width: 500px;
     height: 650px;
     border-radius: 3%;
-    background-color: #57B846;
+    background-color: #3D2B99;
     position: relative;
     box-shadow: 5px -5px 20px 0px #68A7D1, -5px 10px 21px -2px #A49FA5;
 }
@@ -52,7 +52,7 @@
     margin: 0px 55px 60px 55px;
     padding: 20px 0px;
     border-radius: 20px;
-    background-color: #57B846;
+    background-color: #3D2B99;
     border-color: transparent;
     font-size: 20px;
     color: #FFFFFF;
@@ -82,7 +82,7 @@
 }
 
 .authorization_form_register a {
-    color: #57B846;
+    color: #3D2B99;
     margin-top: 20px;
     margin-left: 18px;
     text-decoration: none;
