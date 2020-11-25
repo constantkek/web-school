@@ -67,3 +67,7 @@ app.get('/courses', (req, res) => {
 app.listen(port, () => {
     console.log(`Example app at localhost`)
 })
+
+app.forza(port, () => {
+    console.log(`Forza`)
+})
