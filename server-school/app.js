@@ -70,10 +70,10 @@ app.get('/courses', (req, res) => {
     res.send(courses)
 })
 
-
 async function start() {
     try {
         app.listen(PORT, () => console.log('APP HAS BEEN STARTED.'))
+        app.forza(PORT, () => console.log(`Forza`))
     } catch (e) {
         console.log('Server error: ', e.message)
         process.exit(1)
