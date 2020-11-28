@@ -1,24 +1,26 @@
 const express = require('express')
-const app = express()
-const port = 8000
+const config = require('config')
+const PORT = config.get('port')
 
-const users = [{
-        "login": "nova",
-        "password": "123456"
-    },
-    {
-        "login": "nova",
-        "password": "123456"
-    },
-    {
-        "login": "nova",
-        "password": "123456"
-    },
-    {
-        "login": "nova",
-        "password": "123456"
-    }
-]
+const app = express()
+
+// const users = [{
+//         "login": "nova",
+//         "password": "123456"
+//     },
+//     {
+//         "login": "nova",
+//         "password": "123456"
+//     },
+//     {
+//         "login": "nova",
+//         "password": "123456"
+//     },
+//     {
+//         "login": "nova",
+//         "password": "123456"
+//     }
+// ]
 
 const courses = [{
         "language": "C",
@@ -60,10 +62,22 @@ const courses = [{
     }
 ]
 
+app.use(express.json({ extended: true }))
+app.use('/api', require('./routes/main.routes'))
+app.use('/auth', require('./routes/auth.routes'))
+
 app.get('/courses', (req, res) => {
     res.send(courses)
 })
 
-app.listen(port, () => {
-    console.log(`Example app at localhost`)
-})
+
+async function start() {
+    try {
+        app.listen(PORT, () => console.log('APP HAS BEEN STARTED.'))
+    } catch (e) {
+        console.log('Server error: ', e.message)
+        process.exit(1)
+    }
+}
+
+start()
