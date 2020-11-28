@@ -7,11 +7,10 @@ router.get('/courses', [
 
 ], async (req, res) => {
   try {
-    const res = await queries.getCourses()
-    const courses = res.rows
+    const courses = await queries.getFullCourses()
     return res.status(200).json({ courses, message: 'Friends selected.' })
   } catch (e) {
-    return res.status(500).json({ message: 'Error while getting courses.'})
+    return res.status(500).json({ message: 'Error while getting courses.', errors: e.message })
   }
 })
 
