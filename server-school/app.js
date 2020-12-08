@@ -21,6 +21,7 @@ const app = express()
 //         "password": "123456"
 //     }
 // ]
+// юзаем БД
 
 const courses = [{
         "language": "C",
