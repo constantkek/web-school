@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Authorization.css";
 
 export default function Authorization() {
@@ -19,7 +20,9 @@ export default function Authorization() {
             type="password"
             placeholder="Пароль"
           />
-          <button className="authorization_form_btn">Войти в систему</button>
+          <Link className="authorization_form_btn" to="/home">
+            <span>Войти в систему</span>
+          </Link>
           <div className="authorization_form_register">
             <div>
               <p>
