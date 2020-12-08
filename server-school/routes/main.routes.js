@@ -14,11 +14,11 @@ router.get('/courses', [
   }
 })
 
-router.get('/tasks', [
+router.get('/tasks/:lessonid', [
 
 ], async (req, res) => {
   try {
-    const tasks = await queries.getTasksByLesson()
+    const tasks = await queries.getTasksByLessonID(req.params.lessonid)
     return res.status(200).json({ tasks })
   } catch (e) {
     return res.status(500).json({ message: 'Error while getting tasks.', errors: e.message })
