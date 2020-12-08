@@ -17,6 +17,9 @@ const queries = {
       ON lns.courseID = crs.courseID`)
     return res.rows
   },
+  getTasksByLesson: async () => {
+    // TODO
+  },
 }
 
 module.exports = queries

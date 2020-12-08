@@ -8,9 +8,20 @@ router.get('/courses', [
 ], async (req, res) => {
   try {
     const courses = await queries.getFullCourses()
-    return res.status(200).json({ courses, message: 'Friends selected.' })
+    return res.status(200).json({ courses })
   } catch (e) {
     return res.status(500).json({ message: 'Error while getting courses.', errors: e.message })
+  }
+})
+
+router.get('/tasks', [
+
+], async (req, res) => {
+  try {
+    const tasks = await queries.getTasksByLesson()
+    return res.status(200).json({ tasks })
+  } catch (e) {
+    return res.status(500).json({ message: 'Error while getting tasks.', errors: e.message })
   }
 })
 
